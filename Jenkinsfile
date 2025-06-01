@@ -125,6 +125,12 @@ pipeline {
                     reuseNode true
                 }
             }
+
+            environment {
+                CI_ENVIRONMENT_URL = "${env.STAGING_URL}"
+            }
+
+
             steps {
                 sh '''
                     node --version
