@@ -9,7 +9,7 @@ pipeline {
 
     stages {
 
-        stagr('Docker') {
+        stage('Docker') {
             steps {
                 sh 'docker build -t my-playwright.'
             }
